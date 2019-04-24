@@ -1,0 +1,9 @@
+C:\dev\temp\7182\Store.Domain\bin\Debug\netstandard2.0\Store.Domain.deps.json
+C:\dev\temp\7182\Store.Domain\bin\Debug\netstandard2.0\Store.Domain.dll
+C:\dev\temp\7182\Store.Domain\bin\Debug\netstandard2.0\Store.Domain.pdb
+C:\dev\temp\7182\Store.Domain\obj\Debug\netstandard2.0\Store.Domain.csprojAssemblyReference.cache
+C:\dev\temp\7182\Store.Domain\obj\Debug\netstandard2.0\Store.Domain.csproj.CoreCompileInputs.cache
+C:\dev\temp\7182\Store.Domain\obj\Debug\netstandard2.0\Store.Domain.AssemblyInfoInputs.cache
+C:\dev\temp\7182\Store.Domain\obj\Debug\netstandard2.0\Store.Domain.AssemblyInfo.cs
+C:\dev\temp\7182\Store.Domain\obj\Debug\netstandard2.0\Store.Domain.dll
+C:\dev\temp\7182\Store.Domain\obj\Debug\netstandard2.0\Store.Domain.pdb
