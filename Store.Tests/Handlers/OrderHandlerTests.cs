@@ -27,12 +27,29 @@ namespace Store.Tests
             _productRepository = new FakeProductRepository();
         }
 
-        // Comando inválido
-        // Cliente não existe
-        // zipCode invalido
-        // PromoCode não existe
-        // Promocode expirado
-        // Sem itens
+        [TestMethod]
+        public void Dado_um_cliente_inexistente_o_pedido_nao_deve_ser_gerado()
+        {
+            Assert.Fail();
+        }
+
+        [TestMethod]
+        public void Dado_um_cep_invalido_o_pedido_deve_ser_gerado_normalmente()
+        {
+            Assert.Fail();
+        }
+
+        [TestMethod]
+        public void Dado_um_promocode_inexistente_o_pedido_deve_ser_gerado_normalmente()
+        {
+            Assert.Fail();
+        }
+
+        [TestMethod]
+        public void Dado_um_pedido_sem_itens_o_mesmo_nao_deve_ser_gerado()
+        {
+            Assert.Fail();
+        }
 
         [TestMethod]
         public void Dado_um_comando_invalido_o_pedido_nao_deve_ser_gerado()
