@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using Flunt.Notifications;
+using Flunt.Validations;
 using Store.Domain.Commands.Interfaces;
 
 namespace Store.Domain.Commands
@@ -27,7 +28,11 @@ namespace Store.Domain.Commands
 
         public void Validate()
         {
-            throw new NotImplementedException();
+            AddNotifications(new Contract()
+                .Requires()
+                .HasLen(Customer, 11, "Customer", "Cliente inválido")
+                .HasLen(ZipCode, 8, "ZipCode", "CEP inválido")
+            );
         }
     }
 }

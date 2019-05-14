@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using Store.Domain.Commands.Interfaces;
 using Flunt.Notifications;
+using Flunt.Validations;
 
 namespace Store.Domain.Commands
 {
@@ -21,7 +22,11 @@ namespace Store.Domain.Commands
 
         public void Validate()
         {
-            throw new NotImplementedException();
+            AddNotifications(new Contract()
+                .Requires()
+                .HasLen(Product.ToString(), 32, "Product", "Produto inválido")
+                .IsGreaterThan(Quantity, 0, "Quantity", "Quantidade inválida")
+            );
         }
     }
 }

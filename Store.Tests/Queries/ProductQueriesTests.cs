@@ -1,12 +1,10 @@
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Store.Domain.Entities;
-using Store.Domain.Enums;
 using Store.Domain.Queries;
 
-namespace Store.Tests
+namespace Store.Tests.Queries
 {
     [TestClass]
     public class ProductQueriesTests
@@ -24,6 +22,7 @@ namespace Store.Tests
         }
 
         [TestMethod]
+        [TestCategory("Queries")]
         public void Dado_a_consulta_de_produtos_ativos_deve_retornar_3()
         {
             var result = _products.AsQueryable().Where(ProductQueries.GetActiveProducts());
@@ -31,6 +30,7 @@ namespace Store.Tests
         }
 
         [TestMethod]
+        [TestCategory("Queries")]
         public void Dado_a_consulta_de_produtos_inativos_deve_retornar_2()
         {
             var result = _products.AsQueryable().Where(ProductQueries.GetInactiveProducts());
